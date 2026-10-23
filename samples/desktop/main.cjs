@@ -1,4 +1,13 @@
-const { app, BrowserWindow, ipcMain, protocol, net, session, dialog, Menu } = require("electron");
+const {
+  app,
+  BrowserWindow,
+  ipcMain,
+  protocol,
+  net,
+  session,
+  dialog,
+  Menu,
+} = require("electron");
 const { join } = require("node:path");
 const { pathToFileURL } = require("node:url");
 const { writeFile } = require("node:fs/promises");
@@ -19,15 +28,22 @@ app.whenReady().then(() => {
       name = url.pathname.slice(1);
     if (
       url.hostname !== "app" ||
-      !["index.html", "styles.css", "renderer.js", "model.js", "ui.js", "assets/landscape.svg", "assets/heron.svg", "assets/stillwater-mark.svg"].includes(
-        name,
-      )
+      ![
+        "index.html",
+        "styles.css",
+        "renderer.js",
+        "model.js",
+        "ui.js",
+        "assets/landscape.svg",
+        "assets/heron.svg",
+        "assets/stillwater-mark.svg",
+      ].includes(name)
     )
       return new Response("Not found", { status: 404 });
     return net.fetch(pathToFileURL(join(__dirname, name)).toString());
   });
-  session.defaultSession.setPermissionRequestHandler((_wc, _permission, callback) =>
-    callback(false),
+  session.defaultSession.setPermissionRequestHandler(
+    (_wc, _permission, callback) => callback(false),
   );
   session.defaultSession.setPermissionCheckHandler(() => false);
   function caller(event) {
@@ -80,7 +96,9 @@ app.whenReady().then(() => {
     window.webContents.on("will-navigate", (event, url) => {
       if (!isAppPage(url)) event.preventDefault();
     });
-    window.webContents.on("will-attach-webview", (event) => event.preventDefault());
+    window.webContents.on("will-attach-webview", (event) =>
+      event.preventDefault(),
+    );
     window.loadURL("journal://app/index.html");
   }
   Menu.setApplicationMenu(

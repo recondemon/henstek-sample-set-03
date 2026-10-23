@@ -1,4 +1,10 @@
-const { readFile, writeFile, mkdir, rename, copyFile } = require("node:fs/promises");
+const {
+  readFile,
+  writeFile,
+  mkdir,
+  rename,
+  copyFile,
+} = require("node:fs/promises");
 const { join } = require("node:path");
 const { seed, validate } = require("./model.js");
 class Store {
@@ -28,13 +34,19 @@ class Store {
       .catch(() => {})
       .then(async () => {
         if (this.blocked)
-          throw Error("Saved data needs recovery; the existing file has not been overwritten.");
+          throw Error(
+            "Saved data needs recovery; the existing file has not been overwritten.",
+          );
         await mkdir(this.directory, { recursive: true });
         try {
           const old = await readFile(this.file, "utf8");
-          if (Buffer.byteLength(old) > 500000) throw Error("Existing journal needs recovery.");
+          if (Buffer.byteLength(old) > 500000)
+            throw Error("Existing journal needs recovery.");
           validate(JSON.parse(old));
-          await copyFile(this.file, join(this.directory, "journal.previous.json"));
+          await copyFile(
+            this.file,
+            join(this.directory, "journal.previous.json"),
+          );
         } catch (e) {
           if (e.code !== "ENOENT") throw e;
         }
