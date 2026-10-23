@@ -1,0 +1,19 @@
+{
+  "name": "stillwater-desk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stillwater \u2014 a local nature journal and writing workspace.",
+  "license": "MIT",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . 'Stillwater Desk' --platform=darwin --arch=arm64 --out=../../build/desktop --overwrite --icon=icon.icns"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "electron": "45.0.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format": "stillwater-journal",
+  "version": 1,
+  "entries": [
+    {
+      "id": "heron",
+      "title": "The patient one",
+      "place": "lake",
+      "category": "bird",
+      "date": "2026-10-23",
+      "starred": true,
+      "notes": "A heron held its place at the water’s edge for almost ten minutes. The whole lake seemed to wait with it.\n\nA reminder to stay a little longer next time."
+    },
+    {
+      "id": "alder",
+      "title": "A little gold in the canopy",
+      "place": "grove",
+      "category": "plant",
+      "date": "2026-10-22",
+      "starred": false,
+      "notes": "The alder leaves have started turning. A few were floating in yesterday’s rain, small boats following the same current."
+    },
+    {
+      "id": "mist",
+      "title": "Before the world woke up",
+      "place": "meadow",
+      "category": "moment",
+      "date": "2026-10-20",
+      "starred": true,
+      "notes": "Low mist over the grass. Wet shoes. The kind of morning that asks for nothing except being there."
+    },
+    {
+      "id": "wren",
+      "title": "A voice in the brambles",
+      "place": "grove",
+      "category": "bird",
+      "date": "2026-10-18",
+      "starred": false,
+      "notes": "Heard the wren before I saw it: a small shape with a much bigger song. I sat on the fallen log until it came back."
+    }
+  ]
+}
