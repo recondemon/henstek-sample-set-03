@@ -10,7 +10,7 @@
     />
     <link rel="icon" href="web/assets/stillwater-mark.svg" />
     <link rel="stylesheet" href="catalog.css" />
-  </head>
+  <link rel="stylesheet" href="sample-viewer.css"><script src="sample-viewer.js" defer></script></head>
   <body>
     <a class="skip" href="#main">Skip to samples</a>
     <header>
@@ -47,8 +47,7 @@
           <div class="meta">
             <span>SW-03 / WEB</span><span>INTERACTIVE DEMO</span>
           </div>
-          <a class="screen web" href="web/"
-            ><img
+          <a class="screen web" href="web/" data-preview="web" data-label="SW-03 / Web" data-title="The outside atlas" data-inquiry="https://henstek.dev/start?sample=set-03-website&amp;style=sw-03-web" data-preview-image aria-label="Try SW-03 / Web — The outside atlas"><img
               src="previews/sw-03-website.png"
               width="1440"
               height="1000"
@@ -62,8 +61,7 @@
               what you notice. Search, favorite and export your observations.
             </p>
             <div class="links">
-              <a href="web/">Explore the web app ↗</a
-              ><a
+              <a href="web/" data-preview="web" data-label="SW-03 / Web" data-title="The outside atlas" data-inquiry="https://henstek.dev/start?sample=set-03-website&amp;style=sw-03-web">Try interactive preview ↗</a><a
                 href="https://henstek.dev/start?sample=set-03-website&amp;style=sw-03-web"
                 >Start with web ↗</a
               >
@@ -72,12 +70,9 @@
         </article>
         <article class="mobile">
           <div class="meta">
-            <span>SW-03 / MOBILE</span><span>NATIVE IPHONE</span>
+            <span>SW-03 / MOBILE</span><span>INTERACTIVE MOBILE PREVIEW</span>
           </div>
-          <a
-            class="screen phone"
-            href="https://github.com/recondemon/henstek-sample-set-03/tree/main/samples/mobile"
-            ><img
+          <a class="screen phone" href="mobile/" data-preview="mobile" data-label="SW-03 / Mobile" data-title="The pocket journal" data-inquiry="https://henstek.dev/start?sample=set-03-iphone&amp;style=sw-03-mobile" data-preview-image aria-label="Try SW-03 / Mobile — The pocket journal"><img
               src="previews/sw-03-iphone-native.png"
               width="1206"
               height="2622"
@@ -91,10 +86,7 @@
               and places you return to. Includes portable journal import/export.
             </p>
             <div class="links">
-              <a
-                href="https://github.com/recondemon/henstek-sample-set-03/tree/main/samples/mobile"
-                >Source & walkthrough ↗</a
-              ><a
+              <a href="mobile/" data-preview="mobile" data-label="SW-03 / Mobile" data-title="The pocket journal" data-inquiry="https://henstek.dev/start?sample=set-03-iphone&amp;style=sw-03-mobile">Try interactive preview ↗</a><a
                 href="https://henstek.dev/start?sample=set-03-iphone&amp;style=sw-03-mobile"
                 >Start with mobile ↗</a
               >
@@ -105,8 +97,7 @@
           <div class="meta">
             <span>SW-03 / DESKTOP</span><span>INTERACTIVE DEMO</span>
           </div>
-          <a class="screen desktop" href="desktop/"
-            ><img
+          <a class="screen desktop" href="desktop/" data-preview="desktop" data-label="SW-03 / Desktop" data-title="The collected day" data-inquiry="https://henstek.dev/start?sample=set-03-desktop&amp;style=sw-03-desktop" data-preview-image aria-label="Try SW-03 / Desktop — The collected day"><img
               src="previews/sw-03-desktop.png"
               width="1440"
               height="1000"
@@ -120,8 +111,7 @@
               reading pane, editing and local backups.
             </p>
             <div class="links">
-              <a href="desktop/">Try the desktop preview ↗</a
-              ><a
+              <a href="desktop/" data-preview="desktop" data-label="SW-03 / Desktop" data-title="The collected day" data-inquiry="https://henstek.dev/start?sample=set-03-desktop&amp;style=sw-03-desktop">Try interactive preview ↗</a><a
                 href="https://henstek.dev/start?sample=set-03-desktop&amp;style=sw-03-desktop"
                 >Start with desktop ↗</a
               >
@@ -164,7 +154,7 @@
           >Public source · MIT license ↗</a
         >
       </section>
-    </main>
+    <p class="preview-disclosure">Click any screen to try it. Mobile demos adapt the native app’s key flows for the browser; device features are not included. Mobile edits reset when reloaded.</p></main>
     <footer>
       <span>© 2026 HensTek · Sample Set 03</span
       ><a href="https://henstek.dev/start?sample=set-03"

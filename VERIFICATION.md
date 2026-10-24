@@ -22,3 +22,9 @@ Checked October 23, 2026.
 Native testing covers the iPhone Simulator and Apple silicon macOS. Physical devices, Android, Windows, signed installers and app-store distribution have not been verified. JSON compatibility is tested against the same fixture in Swift and JavaScript; a live web-to-native-desktop transfer was also completed. There is no automatic synchronization.
 
 The map and all initial observations are fictional. No sensors, external map service, payments or production accounts are connected.
+
+## Interactive showcase — October 23, 2026
+
+Verified locally in Chrome: gallery image opens each web/mobile/desktop demo in the expanded viewer; Close and Escape return to the gallery, with focus restored to the initiating link. Mobile framing was checked at a 390 × 844 browser viewport. Web and desktop use the existing browser implementations. The mobile companion is a browser adaptation, not an iOS runtime.
+
+Mobile checks: Field Notes checklist changes and completion filters; Side A demo booking, ticket display and saved-record updates; Stillwater observation creation, favorite state and search. Desktop checks: job filtering, guest check-in totals and journal favorites. Existing model and published-asset checks pass. Native applications were not changed by this release.

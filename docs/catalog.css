@@ -295,3 +295,5 @@ h1 {
 .eyebrow {
   color: #426b83;
 }
+
+.preview-disclosure{max-width:760px;padding:24px 0;font-size:13px;line-height:1.7;opacity:.8}

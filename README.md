@@ -57,3 +57,7 @@ Native checks cover iPhone Simulator and Apple silicon macOS. No App Store listi
 Code and included sample assets are [MIT licensed](LICENSE); dependency licenses remain their own. Keep the license notice when redistributing. HensTek branding does not imply endorsement.
 
 [Customer walkthrough](CUSTOMER-WALKTHROUGH.md) · [Verification](VERIFICATION.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
+
+## Try every platform in the gallery
+
+Click a sample screen or **Try interactive preview** to open the working demo without leaving the gallery. Web and desktop use their existing browser interfaces; `/mobile/` is a browser adaptation of the SwiftUI screens. It is not an iOS emulator and does not include native device or file integrations. Mobile edits live in memory until reload or Reset demo. The viewer keeps the reference label and inquiry link visible. Press Escape or Close to return; Open separately is available if browser embedding/storage is restricted.

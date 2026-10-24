@@ -29,3 +29,7 @@ The samples use separate local storage. Import/export is a deliberate manual tra
 ## Commissioning a variation
 
 You can request a reading diary, travel scrapbook, craft journal or another personal tool. Reference the platform and style independently: “SW-03 / Desktop writing with SA-02 / Web type and colors.” Accounts, shared notebooks, uploads, real maps, encryption and store distribution are separate scope decisions.
+
+## Try every platform in the gallery
+
+Click a sample screen or **Try interactive preview** to open the working demo without leaving the gallery. Web and desktop use their existing browser interfaces; `/mobile/` is a browser adaptation of the SwiftUI screens. It is not an iOS emulator and does not include native device or file integrations. Mobile edits live in memory until reload or Reset demo. The viewer keeps the reference label and inquiry link visible. Press Escape or Close to return; Open separately is available if browser embedding/storage is restricted.
